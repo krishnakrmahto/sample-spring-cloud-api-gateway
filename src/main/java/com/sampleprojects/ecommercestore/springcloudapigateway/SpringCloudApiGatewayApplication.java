@@ -2,12 +2,14 @@ package com.sampleprojects.ecommercestore.springcloudapigateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
-public class SpringcloudapigatewayApplication {
+@EnableDiscoveryClient
+public class SpringCloudApiGatewayApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringcloudapigatewayApplication.class, args);
+		SpringApplication.run(SpringCloudApiGatewayApplication.class, args);
 	}
 
 }
